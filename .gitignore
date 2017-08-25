@@ -1,0 +1,7 @@
+#таски в гулпе
+gulp-tasks/**/*
+node_modules/**/*
+#.DS
+.DS_Store
+#билд
+dist/**/*

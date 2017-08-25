@@ -1,0 +1,458 @@
+/* главный файл со стилями */
+/* reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* шрифты и цвета */
+.mixin-position {
+  margin: 0 auto;
+  max-width: 940px;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #fff;
+  color: #383838;
+}
+/* логотип, верхнее меню и верхние контакты */
+.pageheader {
+  margin: 0 auto;
+  max-width: 940px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.logo {
+  font-family: 'El Messiri', sans-serif;
+  font-size: 24pt;
+  padding: 20px;
+}
+/* главное меню */
+.mainmenu {
+  display: flex;
+  height: 92px;
+  align-items: center;
+}
+.mainmenu_item {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 18px;
+}
+.mainmenu_link {
+  color: #421B12;
+  padding: 20px;
+  display: block;
+}
+.-current {
+  font-weight: bold;
+  color: white;
+  background-color: #CF533A;
+  padding: 20px;
+}
+.-disabled {
+  display: none;
+}
+/* контакты в главном меню */
+.header_contacts {
+  padding: 20px;
+}
+.header_contacts__telephone {
+  font-weight: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.header_contacts__email {
+  font-weight: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.header_contacts__email a {
+  font-weight: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #421B12;
+}
+/* Блок с главным слоганом */
+.teaser {
+  display: flex;
+  background: center top;
+  height: 460px;
+  margin: 0 auto;
+  max-width: 940px;
+  justify-content: center;
+  align-items: center;
+}
+.teaser__text {
+  font-weight: bold;
+  font-size: 70px;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+/* Преимущества свай */
+.promo {
+  margin: 0 auto;
+  max-width: 940px;
+}
+.promo__header {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #992623;
+  padding: 20px 20px 10px 20px;
+}
+.promo__list {
+  padding: 0px 20px 10px 20px;
+}
+.promo__list_item {
+  font-size: 20px;
+  line-height: 1.3em;
+  padding-bottom: 5px;
+  list-style-type: square;
+  color: #3f3f3f;
+}
+/* Типы свай по диаметру */
+.types {
+  margin: 0 auto;
+  max-width: 940px;
+}
+.types__header {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #992623;
+  padding: 20px 20px 10px 20px;
+}
+.types__list {
+  display: flex;
+}
+.types__list_item {
+  background: #CF533A;
+  border: 1px solid #F7A695;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  align-items: center;
+  margin: 10px 0px;
+}
+.-selected {
+  margin: 0px;
+}
+.types__item_header {
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 5px;
+  text-shadow: 0px 0px 2px black;
+}
+.types__item_description {
+  color: white;
+  font-size: 16px;
+  line-height: 1.3em;
+  text-shadow: 0px 0px 2px black;
+}
+.types__illustration {
+  display: flex;
+  justify-content: center;
+  width: 940px;
+}
+/* Процесс работы (идентичен преимуществам) */
+.process {
+  margin: 0 auto;
+  max-width: 940px;
+}
+.process__header {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #992623;
+  padding: 20px 20px 10px 20px;
+}
+.process__list {
+  padding: 0px 20px 10px 20px;
+}
+.process__list_item {
+  font-size: 20px;
+  line-height: 1.3em;
+  padding-bottom: 5px;
+  list-style-type: square;
+  color: #3f3f3f;
+}
+/* Каталог продукции (Егоза конкретно здесь) */
+.catalog_item {
+  margin: 0 auto;
+  max-width: 940px;
+}
+.catalog_item__header {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #992623;
+  padding: 20px 20px 10px 20px;
+}
+.catalog_item__description {
+  padding: 0px 20px;
+  font-size: 20px;
+  line-height: 1.3em;
+  padding-bottom: 15px;
+  color: #3f3f3f;
+}
+.catalog_item__description strong {
+  font-weight: bold;
+}
+.catalog_item__description a {
+  color: #992623;
+}
+.catalog_item__list {
+  padding: 0px 20px 10px 20px;
+}
+.catalog_item__list_item {
+  font-size: 20px;
+  line-height: 1.3em;
+  padding-bottom: 5px;
+  list-style-type: square;
+  color: #3f3f3f;
+}
+/* Портфолио */
+.portfolio {
+  margin: 0 auto;
+  max-width: 940px;
+}
+.portfolio__header {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #992623;
+  padding: 20px 20px 10px 20px;
+}
+.portfolio__carousel {
+  position: relative;
+  height: 460px;
+}
+.portfolio__carousel_item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
+  transition: all 0.5 sease-in-out;
+}
+.portfolio__carousel_item h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  text-shadow: 1px 1px 2px black;
+}
+.arrow {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 50px;
+  height: 100%;
+  background: url("/images/carousel-arrow-dark.png") 50% 50% 20px no-repeat;
+}
+.arrow.arrow-prev {
+  left: 0;
+}
+.arrow.arrow-next {
+  right: 0;
+  transform: rotate(180deg);
+}
+.-light {
+  color: white;
+}
+.-light .arrow {
+  background: url("/images/carousel-arrow-light.png") 50% 50% 20px no-repeat;
+}
+[id^="target-item"] {
+  display: none;
+}
+.item-1 {
+  z-index: 2;
+  opacity: 1;
+}
+*:target ~ .item-1 {
+  opacity: 0;
+}
+#target-item-1:target ~ .item-1 {
+  opacity: 1;
+}
+#target-item-2:target ~ .item-2,
+#target-item-3:target ~ .item-3 {
+  z-index: 3;
+  opacity: 1;
+}
+.item-1 {
+  background: url('/images/vint/portfolio-obr.png');
+  width: 840px;
+  height: 410px;
+}
+.item-2 {
+  background: url('/images/vint/portfolio-vali.png');
+  width: 840px;
+  height: 410px;
+}
+/* Выходите на контакт (предложение к разговору) */
+.contacts {
+  margin: 0 auto;
+  max-width: 940px;
+}
+.contacts_text {
+  padding: 80px 30px;
+  font-family: 'El Messiri', sans-serif;
+  font-size: 50px;
+}
+.contacts_text a {
+  color: #992623;
+}
+/* карта */
+.map_section {
+  margin: 0 auto;
+  max-width: 940px;
+}
+#map {
+  width: 100%;
+  height: 300px;
+}
+/* подвал */
+.site_contacts {
+  margin: 0 auto;
+  max-width: 940px;
+  display: flex;
+  align-items: center;
+  padding: 20px 0px;
+}
+.site_contacts__address {
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding: 20px;
+  font-size: 30px;
+}
+.site_contacts__e-mail a {
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding: 20px;
+  font-size: 30px;
+  color: #992623;
+}
+.site_contacts__phones {
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding: 20px;
+  font-size: 30px;
+}

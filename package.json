@@ -1,0 +1,20 @@
+{
+  "name": "plasma-plus.ru",
+  "version": "1.0.0",
+  "description": "Plazma homepage",
+  "main": "index.js",
+  "author": "Ilya Yakamsev <yakamsev@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-less": "^3.3.0",
+    "gulp-refresh": "^1.1.0",
+    "gulp-rsync": "^0.0.8",
+    "require-dir": "^0.3.1",
+    "reset-css": "^2.2.0"
+  }
+}
