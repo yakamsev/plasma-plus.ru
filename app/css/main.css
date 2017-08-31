@@ -342,73 +342,17 @@ body {
   color: #992623;
   padding: 20px 20px 10px 20px;
 }
-.portfolio__carousel {
-  position: relative;
-  height: 460px;
-}
-.portfolio__carousel_item {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.portfolio__item {
   padding: 25px 50px;
-  opacity: 0;
-  transition: all 0.5 sease-in-out;
+  margin-top: 10px;
+  width: 840px;
+  height: 410px;
 }
-.portfolio__carousel_item h3 {
+.portfolio__item h3 {
   font-family: 'Open Sans', sans-serif;
+  color: white;
   font-size: 30px;
   text-shadow: 1px 1px 2px black;
-}
-.arrow {
-  position: absolute;
-  top: 0;
-  display: block;
-  width: 50px;
-  height: 100%;
-  background: url("/images/carousel-arrow-dark.png") 50% 50% 20px no-repeat;
-}
-.arrow.arrow-prev {
-  left: 0;
-}
-.arrow.arrow-next {
-  right: 0;
-  transform: rotate(180deg);
-}
-.-light {
-  color: white;
-}
-.-light .arrow {
-  background: url("/images/carousel-arrow-light.png") 50% 50% 20px no-repeat;
-}
-[id^="target-item"] {
-  display: none;
-}
-.item-1 {
-  z-index: 2;
-  opacity: 1;
-}
-*:target ~ .item-1 {
-  opacity: 0;
-}
-#target-item-1:target ~ .item-1 {
-  opacity: 1;
-}
-#target-item-2:target ~ .item-2,
-#target-item-3:target ~ .item-3 {
-  z-index: 3;
-  opacity: 1;
-}
-.item-1 {
-  background: url('/images/vint/portfolio-obr.png');
-  width: 840px;
-  height: 410px;
-}
-.item-2 {
-  background: url('/images/vint/portfolio-vali.png');
-  width: 840px;
-  height: 410px;
 }
 /* Выходите на контакт (предложение к разговору) */
 .contacts {
